@@ -13,9 +13,9 @@ namespace TabuleiroXadrez
         public int QuantMovimentos { get; protected set; }
         public Tabuleiro Tab { get; protected set; }
 
-        public Peca(Posicao posicaoPeca, Tabuleiro tab, Cor corPeca)
+        public Peca(Tabuleiro tab, Cor corPeca)
         {
-            PosicaoPeca = posicaoPeca;
+            PosicaoPeca = null;
             CorPeca = corPeca;
             Tab = tab;
             QuantMovimentos = 0;//inicia 0 pois é no momento que começa o jogo
