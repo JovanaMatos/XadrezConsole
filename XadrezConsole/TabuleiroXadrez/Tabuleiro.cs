@@ -51,6 +51,21 @@ namespace TabuleiroXadrez
             Matriz_Pecas[posicao.Linha, posicao.Coluna] = peca;
             peca.PosicaoPeca = posicao;// aqui atualizo a posição da minha peça
         }
+
+        public Peca Retirar_Peca(Posicao pos)
+        {
+            if (Retorna_Peca(pos) == null)
+            {
+                return null;
+            }
+            Peca aux = Retorna_Peca(pos);
+            aux.PosicaoPeca = null;
+            Matriz_Pecas[pos.Linha, pos.Coluna] = null; 
+            return aux;
+        }
+   
+
+
         //testando se a posição é valida.
         public bool PosicaoValida(Posicao pos)
         {

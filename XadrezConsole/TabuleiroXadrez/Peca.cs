@@ -20,5 +20,10 @@ namespace TabuleiroXadrez
             Tab = tab;
             QuantMovimentos = 0;//inicia 0 pois é no momento que começa o jogo
         }
+
+        public void IncrementarQteMovimentos()
+        {
+            QuantMovimentos++;
+        }
     }
 }
