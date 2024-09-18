@@ -43,9 +43,11 @@ namespace JogoXadrez
             {
                 throw new TabuleiroException("Não existe peça na posição de origem escolhida");
             }
+
             if (JogadorAtual != Tab.Retorna_Peca(pos).CorPeca) {
                 throw new TabuleiroException("A peça de origem escolhida não é sua");
             }
+
             if (!Tab.Retorna_Peca(pos).ExisteMovimentosPossiveis()) {
                 throw new TabuleiroException("Não há movimentos possiveis para a peça de origem escolhida ");
             }

@@ -11,6 +11,7 @@ namespace JogoXadrez
             Coluna = coluna;
             Linha = linha;
         }
+
         // aqui converto a posição do tabuleiro na matriz original
         public Posicao ToPosicao()
         {
