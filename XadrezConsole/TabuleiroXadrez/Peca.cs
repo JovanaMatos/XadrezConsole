@@ -24,6 +24,10 @@ namespace TabuleiroXadrez
 
         public void IncrementarQteMovimentos()
         {
+            QuantMovimentos--;
+        }
+        public void DecrementarQteMovimentos()
+        {
             QuantMovimentos++;
         }
         public bool ExisteMovimentosPossiveis()
