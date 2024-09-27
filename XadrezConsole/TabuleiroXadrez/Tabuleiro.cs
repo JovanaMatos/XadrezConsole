@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace TabuleiroXadrez
 {
@@ -31,6 +26,7 @@ namespace TabuleiroXadrez
         //sobrecarga
         public Peca Retorna_Peca(Posicao posicao)
         {
+            
             return Matriz_Pecas[posicao.Linha, posicao.Coluna];
         }
 

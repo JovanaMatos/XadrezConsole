@@ -1,5 +1,4 @@
-﻿using System;
-using TabuleiroXadrez;
+﻿using TabuleiroXadrez;
 using JogoXadrez;
 
 namespace XadrezConsole
@@ -43,6 +42,7 @@ namespace XadrezConsole
                         Console.BackgroundColor= fundoOriginal;
                     }
                     ImprimirPeca(tab.Retorna_Peca(l, c));
+
                     Console.BackgroundColor = fundoOriginal;
                 }
                 Console.WriteLine();
@@ -57,7 +57,6 @@ namespace XadrezConsole
             char coluna = s[0];
             int linha = int.Parse(s[1] + "");
             return new PosicoesXadrez(coluna, linha);
-
 
         }
 

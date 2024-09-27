@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using TabuleiroXadrez;
 using JogoXadrez;
 
@@ -32,7 +32,7 @@ namespace XadrezConsole
                         Console.Clear();
                         Tela.ImprimeTabuleiro(partida.Tab, posicoesPossiveis);
 
-
+                        //aula 237
                         Console.Write("Destino: ");
                         Posicao destino = Tela.LerPosicaoXadrez().ToPosicao();
                         partida.ValidarPosicaoDeDestino(origem, destino);
@@ -41,6 +41,8 @@ namespace XadrezConsole
                         Console.WriteLine();
 
                     }
+                    
+                    
                     catch(TabuleiroException e)
                     {
                         Console.WriteLine(e.Message);
