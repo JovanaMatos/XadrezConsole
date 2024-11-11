@@ -105,8 +105,8 @@ namespace JogoXadrez
 
                 if (QuantMovimentos == 0 && !Partida.Xeque)
                 {
-                    //roque pequeno
-                    Posicao posT2 = new Posicao(PosicaoPeca.Linha, PosicaoPeca.Coluna - 3);
+                    //roque grande
+                    Posicao posT2 = new Posicao(PosicaoPeca.Linha, PosicaoPeca.Coluna - 4);
 
                     if (TesteTorreParaRoque(posT2))
                     {

@@ -27,7 +27,7 @@ namespace JogoXadrez
             pos.DefinirValores(PosicaoPeca.Linha - 1, PosicaoPeca.Coluna - 1);
             while (Tab.PosicaoValida(pos) && PodeMover(pos))
             {
-                mat[PosicaoPeca.Linha, pos.Coluna] = true;
+                mat[pos.Linha, pos.Coluna] = true;
                 if (Tab.Retorna_Peca(pos) != null && Tab.Retorna_Peca(pos).CorPeca != CorPeca)
                 {
                     break;
